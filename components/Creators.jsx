@@ -5,8 +5,8 @@ const Creators = () => {
         <div className={styles.creators}>
             <div className={styles.creators__projects}>
                 <h2 className={styles.creators__projectsTitle}>От создателя проектов</h2>
-                <img className={styles.creators__image} src="/signals.png" alt="Signals" width="143" height="143" />
-                <img className={styles.creators__image} src="/signals2.png" alt="Weteran signals" width="143" height="143" />
+                <img className={styles.creators__image} src="/signals.jpg" alt="Signals" width="143" height="143" />
+                <img className={styles.creators__image} src="/signals2.jpg" alt="Weteran signals" width="143" height="143" />
             </div>
             <div className={styles.creators__platforms}>
                 <h2 className={styles.creators__platformsTitle}>Работаем на</h2>

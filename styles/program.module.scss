@@ -2,10 +2,10 @@
 
 .program {
     color: #FFFFFF;
-    width: 320px;
+    width: 310px;
     margin: 0 auto;
     margin-top: 64px;
-    margin-bottom: 69px;
+    margin-bottom: 60px;
 }
 
 .program__title {
@@ -25,11 +25,10 @@
     line-height: 154.3%;
     color: $blue;
     margin: 0;
-    margin-bottom: 5px;
 }
 
 .program__list {
-    padding-left: 25px;
+    padding-left: 20px;
     margin: 0;
     margin-bottom: 31px;
 
@@ -45,12 +44,13 @@
 
 @media (min-width: $desktop-width) {
     .program {
-        width: 760px;
+        width: 716px;
         margin-top: 116px;
+        margin-bottom: 93px;
     }
 
     .program__title {
-        font-size: 50px;
+        font-size: 45px;
         line-height: 59px;
         margin-bottom: 45px;
     }
