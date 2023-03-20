@@ -7,6 +7,7 @@ import Program from '../components/Program';
 import Reviews from '../components/Reviews';
 import Rates from '../components/Rates';
 import Creators from '../components/Creators';
+import Footer from '../components/Footer';
 
 const Index = () => {
     return (
@@ -21,6 +22,7 @@ const Index = () => {
            <Reviews/>
            <Rates/>
            <Creators/>
+           <Footer/>
         </>
     );
 };
