@@ -3,6 +3,7 @@ import Head from 'next/head';
 
 import FirstScreen from '../components/FirstScreen';
 import Advantages from '../components/Advantages';
+import Program from '../components/Program';
 
 const Index = () => {
     return (
@@ -13,6 +14,7 @@ const Index = () => {
             </Head>
            <FirstScreen/>
            <Advantages/>
+           <Program/>
         </>
     );
 };

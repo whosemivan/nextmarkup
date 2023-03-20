@@ -1,0 +1,66 @@
+@import "variables";
+
+
+.program {
+    color: #FFFFFF;
+    width: 320px;
+    margin: 0 auto;
+    margin-top: 64px;
+}
+
+.program__title {
+    font-weight: 900;
+    font-size: 25px;
+    line-height: 29px;
+    text-align: center;
+    letter-spacing: 0.025em;
+    text-transform: uppercase;
+    margin: 0;
+    margin-bottom: 24px;
+}
+
+.program__listTitle {
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 154.3%;
+    color: $blue;
+    margin: 0;
+    margin-bottom: 5px;
+}
+
+.program__list {
+    padding-left: 25px;
+    margin: 0;
+    margin-bottom: 31px;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.program__item {
+    font-size: 13px;
+    line-height: 154.3%;
+}
+
+@media (min-width: $desktop-width) {
+    .program {
+        width: 760px;
+        margin-top: 116px;
+    }
+
+    .program__title {
+        font-size: 50px;
+        line-height: 59px;
+        margin-bottom: 45px;
+    }
+
+    .program__list {
+        margin-bottom: 45px;
+    }
+
+    .program__listTitle,
+    .program__item {
+        font-size: 20px;
+    }
+}
