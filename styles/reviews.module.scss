@@ -1,0 +1,45 @@
+@import "variables";
+
+.reviews {
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 348px;
+    margin: 0 auto;
+    margin-bottom: 70px;
+}
+
+.reviews__title {
+    font-weight: 900;
+    font-size: 25px;
+    line-height: 29px;
+    text-align: center;
+    letter-spacing: 0.025em;
+    text-transform: uppercase;
+    margin: 0;
+    margin-bottom: 24px;
+}
+
+// desktop
+// .reviews__swiper {
+//     width: 100%;
+//     display: none;
+// }
+
+// mobile
+.reviews__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+@media (min-width: $desktop-width) {
+    .reviews {
+        width: 1272px;
+    }
+
+    .reviews__list {
+        display: none;
+    }
+}
