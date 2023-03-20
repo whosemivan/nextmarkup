@@ -1,0 +1,158 @@
+@import "variables";
+@import "mixins";
+
+.advantages {
+    margin-top: 45px;
+}
+
+.advantages__title {
+    @include visually-hidden;
+}
+
+.advantages__list {
+    padding: 0;
+    margin: 0;
+    margin: 0 auto;
+    list-style: none;
+    width: 313px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.advantages__item {
+    width: 91px;
+    padding-top: 40px;
+    position: relative;
+
+    &:nth-child(2) {
+        width: 67px;
+
+        &::before {
+            content: "6";
+        }
+    }
+
+    &:nth-child(3) {
+        width: 89px;
+
+        &::before {
+            content: "6";
+        }
+    }
+
+    &:nth-child(4) {
+        width: 118px;
+
+        &::before {
+            content: "";
+            background-image: url("../public/lock.svg");
+            width: 29px;
+            height: 29px;
+        }
+    }
+
+    &:last-child {
+        width: 105px;
+
+        &::before {
+            content: "";
+            background-image: url("../public/support.svg");
+            width: 51px;
+            height: 47px;
+        }
+    }
+
+    &::before {
+        content: "12";
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 47px;
+        letter-spacing: 0.025em;
+        color: #FFFFFF;
+        text-shadow: 0px 0px 9px rgba(255, 255, 255, 0.25);
+
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translate(-50%, 0);
+    }
+}
+
+.advantages__text {
+    font-size: 13px;
+    line-height: 15px;
+    text-align: center;
+    letter-spacing: 0.005em;
+
+    color: rgba(255, 255, 255, 0.5);
+    text-align: center;
+}
+
+@media (min-width: $desktop-width) {
+    .advantages {
+        margin-top: 70px;
+    }
+
+    .advantages__list {
+        width: 993px;
+        justify-content: space-between;
+    }
+
+    .advantages__item {
+        width: 140px;
+        padding-top: 40px;
+
+        &:nth-child(2) {
+            width: 102px;
+
+            &::before {
+                content: "6";
+            }
+        }
+
+        &:nth-child(3) {
+            width: 136px;
+
+            &::before {
+                content: "6";
+            }
+        }
+
+        &:nth-child(4) {
+            width: 192px;
+
+            &::before {
+                content: "";
+                background-image: url("../public/lock.svg");
+                width: 40px;
+                height: 42px;
+            }
+        }
+
+        &:last-child {
+            width: 145px;
+
+            &::before {
+                content: "";
+                background-image: url("../public/support.svg");
+                width: 70px;
+                height: 56px;
+                top: -10px;
+            }
+        }
+
+        &::before {
+            font-size: 56.4397px;
+            line-height: 66px;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    }
+
+    .advantages__text {
+        font-size: 20px;
+        line-height: 23px;
+    }
+
+}

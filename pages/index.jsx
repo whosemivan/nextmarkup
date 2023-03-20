@@ -2,6 +2,7 @@ import styles from '../styles/index.module.scss';
 import Head from 'next/head';
 
 import FirstScreen from '../components/FirstScreen';
+import Advantages from '../components/Advantages';
 
 const Index = () => {
     return (
@@ -11,6 +12,7 @@ const Index = () => {
                 <title>Crypto Weteran</title>
             </Head>
            <FirstScreen/>
+           <Advantages/>
         </>
     );
 };
