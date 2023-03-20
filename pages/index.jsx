@@ -6,6 +6,7 @@ import Advantages from '../components/Advantages';
 import Program from '../components/Program';
 import Reviews from '../components/Reviews';
 import Rates from '../components/Rates';
+import Creators from '../components/Creators';
 
 const Index = () => {
     return (
@@ -19,6 +20,7 @@ const Index = () => {
            <Program/>
            <Reviews/>
            <Rates/>
+           <Creators/>
         </>
     );
 };
