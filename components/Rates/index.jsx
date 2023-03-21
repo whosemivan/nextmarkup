@@ -1,4 +1,4 @@
-import styles from '../styles/rates.module.scss';
+import styles from './style.module.scss';
 
 const Rates = () => {
     return (

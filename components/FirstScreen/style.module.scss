@@ -1,13 +1,12 @@
-@import "variables";
-@import "mixins";
-
+@import "../../styles/variables";
+@import "../../styles/mixins";
 
 .firstScreen {
     min-height: 100vh;
-    background-image: url("../public/firstScreenBg@1x.jpg");
+    background-image: url("../../public/firstScreenBg@1x.jpg");
     background-color: #2B2B2B;
-    background-repeat: no-repeat;
     background-position: center top;
+    background-size:cover;
 
     display: flex;
     flex-direction: column;
@@ -121,9 +120,7 @@
     .firstScreen {
         border-radius: 0 0 20px 20px;
         width: 100%;
-        max-width: 1440px;
         margin: 0 auto;
-        background-repeat: repeat-y;
     }
 
     .firstScreen__logoImage {

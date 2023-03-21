@@ -1,4 +1,4 @@
-import styles from '../styles/footer.module.scss';
+import styles from './style.module.scss';
 
 const Footer = () => {
     return (
@@ -18,11 +18,6 @@ const Footer = () => {
                 </ul>
 
                 <ul className={styles.footer__navList}>
-                    <li className={styles.footer__navItem}>
-                        <a className={styles.footer__navLink} href="#">
-                            Пользовательское соглашение
-                        </a>
-                    </li>
                     <li className={styles.footer__navItem}>
                         <a className={styles.footer__navLink} href="#">
                             Пользовательское соглашение

@@ -1,4 +1,4 @@
-import styles from '../styles/firstScreen.module.scss';
+import styles from './style.module.scss';
 
 const FirstScreen = () => {
     return (

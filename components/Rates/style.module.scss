@@ -1,4 +1,4 @@
-@import "variables";
+@import "../../styles/variables";
 
 .rates {
     color: #ffffff;
@@ -161,7 +161,7 @@
 
         &::before {
             content: "";
-            background-image: url("../public/list-style.svg");
+            background-image: url("../../public/list-style.svg");
             width: 6px;
             height: 6px;
             top: 50%;
@@ -212,6 +212,7 @@
 
     .rates__item {
         padding-top: 34px;
+        padding-bottom: 30px;
     }
 
     .rates__itemTitle {
@@ -219,11 +220,11 @@
     }
 
     .rates__item:first-child {
-        height: 456px;
+        height: 388px;
     }
 
     .rates__item:last-child {
-        height: 477px;
+        height: 409px;
     }
 
     .rates__text {
@@ -232,5 +233,17 @@
 
     .rates__cardList {
         width: 303px;
+    }
+
+    .rates__price {
+        margin-bottom: 43px;
+    }
+
+    .rates__item:last-child .rates__price {
+        margin-bottom: 35px;
+    }
+
+    .rates__item:nth-child(2) .rates__price {
+        margin-bottom: 43px;
     }
 }

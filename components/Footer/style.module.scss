@@ -1,4 +1,4 @@
-@import "variables";
+@import "../../styles/variables";
 
 .footer {
     padding-top: 24px;
@@ -64,6 +64,10 @@
 }
 
 @media (min-width: $desktop-width) {
+    .footer {
+        padding-top: 21px;
+    }
+
     .footer__wrapper {
         flex-direction: row;
         justify-content: flex-end;
@@ -79,10 +83,18 @@
 
     .footer__navList {
         text-align: right;
+        width: 370px;
     }
 
     .footer__infoList {
-        margin-right: 150px;
+        margin-right: 186px;
+        width: 176px;
+        line-height: 28px;
+    }
+
+    .footer__infoItem {
+        margin-bottom: 5px;
+        padding-top: 6px;
     }
 
     .footer__imageLogo {
@@ -90,7 +102,7 @@
         top: 50%;
         left: 0;
         transform: translate(0, -50%);
-        width: 235px;
-        height: 47px;
+        width: 262px;
+        height: 65px;
     }
 }

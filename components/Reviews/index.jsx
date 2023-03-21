@@ -4,7 +4,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 
 import "swiper/css";
 import "swiper/css/navigation";
-import styles from '../styles/reviews.module.scss';
+import styles from './style.module.scss';
 import { Navigation } from "swiper";
 
 
