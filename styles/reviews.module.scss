@@ -63,6 +63,19 @@
         border: none;
         width: 43px;
         height: 43px;
+        cursor: pointer;
+        opacity: 1;
+        transition: all 0.5s linear;
+    }
+
+    .prevArrow:hover,
+    .nextArrow:hover {
+        opacity: 0.7;
+    }
+
+    .prevArrow:active,
+    .nextArrow:active {
+        opacity: 0.5;
     }
 
     .nextArrow {

@@ -51,6 +51,16 @@
 .footer__navLink {
     color: rgba(255, 255, 255, 0.2);
     text-decoration: none;
+    opacity: 1;
+    transition: all 0.5s linear;
+}
+
+.footer__navLink:hover {
+    opacity: 0.7;
+}
+
+.footer__navLink:active {
+    opacity: 0.5;
 }
 
 @media (min-width: $desktop-width) {
@@ -82,5 +92,5 @@
         transform: translate(0, -50%);
         width: 235px;
         height: 47px;
-    }    
+    }
 }
