@@ -1,4 +1,5 @@
 
+import React, { useRef, useCallback } from 'react';
 import { Swiper, SwiperSlide } from "swiper/react";
 
 import "swiper/css";
@@ -8,6 +9,18 @@ import { Navigation } from "swiper";
 
 
 const Reviews = () => {
+    const sliderRef = useRef(null);
+
+    const handlePrev = useCallback(() => {
+        if (!sliderRef.current) return;
+        sliderRef.current.swiper.slidePrev();
+    }, []);
+
+    const handleNext = useCallback(() => {
+        if (!sliderRef.current) return;
+        sliderRef.current.swiper.slideNext();
+    }, []);
+
     return (
         <section className={styles.reviews}>
             <h2 className={styles.reviews__title}>Отзывы учеников</h2>
@@ -17,7 +30,8 @@ const Reviews = () => {
                 slidesPerView={3}
                 spaceBetween={40}
                 loop={true}
-                navigation={true}
+                // navigation={true}
+                ref={sliderRef}
                 modules={[Navigation]}
                 className={styles.mySwiper}
             >
@@ -37,6 +51,8 @@ const Reviews = () => {
                     </div>
                 </SwiperSlide>
             </Swiper>
+            <button className={styles.prevArrow} onClick={handlePrev}></button>
+            <button className={styles.nextArrow} onClick={handleNext}></button>
 
             {/* mobile */}
             <ul className={styles.reviews__list}>

@@ -50,6 +50,25 @@
     .reviews {
         width: 1272px;
         margin-bottom: 98px;
+        position: relative;
+    }
+
+    .prevArrow,
+    .nextArrow {
+        position: absolute;
+        top: 56%;
+        left: -9px;
+        background-color: transparent;
+        background-image: url("../public/arrow.svg");
+        border: none;
+        width: 43px;
+        height: 43px;
+    }
+
+    .nextArrow {
+        left: auto;
+        right: -9px;
+        transform: rotate(180deg);
     }
 
     .reviews__title {
