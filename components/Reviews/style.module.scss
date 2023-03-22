@@ -46,6 +46,11 @@
     }
 }
 
+.prevArrow,
+.nextArrow {
+    display: none;
+}
+
 @media (min-width: $desktop-width) {
     .reviews {
         width: 1272px;
@@ -55,6 +60,7 @@
 
     .prevArrow,
     .nextArrow {
+        display: block;
         position: absolute;
         top: 56%;
         left: -9px;
